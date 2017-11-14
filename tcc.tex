@@ -431,7 +431,19 @@ As séries temporais apresentam subsequências que se repetem com frequência. A
 
 \chapter{Trabalhos Relacionados}
 \label{sec:trabalhos_relacionados}
-Diversos trabalhos se propõem a coletar e interpretar dados para identificar certos padrões ou somente responder certos questionamentos sobre eventos diários no serviço de transporte multimodal. Vários fatores influenciam a qualidade do serviço e satisfação do passageiro.  [referencia] afirma que o estado de conservação da via é uma das principais causas de acidentes rodoviários ao redor do mundo. Influenciando na imprevisibilidade da forma de condução do veiculo, bem como a deterioração do mesmo, podendo gerar desde impactos econômicos até riscos de vida ao condutor e aos passageiros. Dentro da esfera da prestacao do serviço, [hanaoka2014] constata que longas filas de espera e superlotação de onibus causam estresse e exodo de usuarios para outras modalidades de transporte além do transporte rodoviário. [kim2009], fez uma pesquisa junto aos usuarios dos servicos de trasnporte, e constatou que mais informacoes sobre o servico, como superlotacao e tempo de chegada dos onibus sao uteis e elevam a satisfacao dos usuarios e sua visao da qualidade do servico. Tal informacao é importante, aliada ao trabalho de [raymond2016] que se propoe a identificar rotas de onibus que podem estar incorretas e desatualizadas por uma variedade de razoes.
+Diversos trabalhos propõem-se a coletar e interpretar informações de modo a identificar padrões que respondam questionamentos acerca da qualidade do serviço de transporte multimodal em várias localidades do planeta. Inúmeros fatores podem vir a influenciar o conforto da viagem e o grau de satisfação do passageiro para com a experiência entregue pela companhia de transporte. 
+
+Algumas características podem porém gerar danos à segurança dos passageiros. \citep{world2015global} aponta a relação entre a condição da malha viária e o índice de acidentes fatais no trânsito. \citep{euPolicyDep} afirma que o comportamento do motorista é, juntamente com a qualidade da infraestrutura disponível, o maior contribuidor para que acidentes aconteçam. Logo, é possível achar uma justificativa plausível para que tantos trabalhos tentem identificar padrões nas viagens afim de tentar mitigar algumas das situações apontadas como possíveis causas de acidentes.
+
+Utilizando-se de estratégias menos complexas ou mais robustas, inúmeros são os trabalhos dedicados ao levantamento e processamento de informações para entender e melhorar a infraestrutura das estradas ou o comportamento do motorista no trânsito. \citep{gawad2016dynamic} propõem uma abordagem de detecção de anomalias na pista utilizando aprendizado de máquina para calcular o limite entre um balanço natural do automóvel e um buraco no asfalto. Seu trabalho é dividido entre a aplicação em um telefone móvel, utilizada para perceber anomalias e apresentar um mapa com as marcações de outros eventos levantados anteriormente por mais usuários. E, um servidor que utiliza aprendizado por reforço para inserir ou remover anomalias no banco de dados. 
+
+\citep{HANAOKA2014274} estuda a aplicabilidade de interpretar dados sobre o trajeto diário de estudantes da Universidade de Ritsumeikan em Kyoto, Japão. Em seu trabalho, os autores estimam as rotas dos estudantes interpolando dados de serviços multimodais de transporte que representam a origem e o destino dos estudantes em horários restritos do dia. Utilizando esta abordagem tenta-se prever o deslocamento de estudantes e a área de maior concentração dos mesmos na respectiva fatia temporal diária. Podendo assim o trafego ao redor da universidade e a oferta de transporte até a mesma serem melhor estruturados.
+
+Em \citep{kim2009passenger} apresenta-se uma modelagem a partir de uma entrevista em forma de questionário que visa predizer o comportamento de passageiros baseado na probabilidade de escolha entre o primeiro ônibus a chegar à parada e o segundo. Tendo como características determinante o conforto da viagem baseado na disponibilidade de assentos, lotação do veículo e o tempo de duração do trajeto.
+
+Já \citep{raymond2016} debruça-se sobre a questão da difícil interpretação de séries-temporais advindas do sistema GPS, já que as mesmas podem vir a apresentar \textit{outliers} cuja origem é a interferência que o sinal de geolocalização pode vir a receber. Para evitar tratar tal desafio é utilizado uma técnica de correspondência por mapas (\textit{map-matching}) e \textit{bag of words}, esta última sendo uma técnica de classificação de imagem. A correspondência por mapas transforma uma sequência de pontos do GPS em uma de ruas, diminuindo a granularidade do problema. Para testar tal abordagem é utilizado a base de dados de posições dos ônibus da cidade do Rio de Janeiro. 
+
+\cite{SINGH201756}
 
 
 \begin{table}[!ht]
@@ -526,7 +538,7 @@ A defesa da dissertação (9:Defesa) está prevista para setembro de 2017. O cro
 \label{bibpage}
 \addcontentsline{toc}{section}{Referências Bibliográficas}
 \bibliography{references}
-\bibliographystyle{apa}
+\bibliographystyle{plain}
 \label{bibfinalpage}
 
 
