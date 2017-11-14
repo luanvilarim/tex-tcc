@@ -1,0 +1,79 @@
+@inproceedings{Foote99bigball,
+    author = {Brian Foote and Joseph Yoder},
+    title = {Big ball of mud},
+    booktitle = {In Pattern Languages of Program Design 4},
+    year = {1999},
+    publisher = {Addison-Wesley Longman}
+}
+
+@article{Perry:1992:FSS:141874.141884,
+ author = {Perry, Dewayne E. and Wolf, Alexander L.},
+ title = {Foundations for the Study of Software Architecture},
+ journal = {SIGSOFT Softw. Eng. Notes},
+ issue_date = {Oct. 1992},
+ volume = {17},
+ number = {4},
+ month = oct,
+ year = {1992},
+ issn = {0163-5948},
+ pages = {40--52},
+ numpages = {13},
+ url = {http://doi.acm.org/10.1145/141874.141884},
+ doi = {10.1145/141874.141884},
+ acmid = {141884},
+ publisher = {ACM},
+ address = {New York, NY, USA},
+}
+
+@article{mokni_formal_2016,
+	title = {A Formal Approach for Managing Component-based Architecture Evolution},
+	volume = {127},
+	issn = {0167-6423},
+	url = {http://dx.doi.org/10.1016/j.scico.2016.03.003},
+	doi = {10.1016/j.scico.2016.03.003},
+	abstract = {Software architectures are subject to several types of change during the software lifecycle (e.g. adding requirements, correcting bugs, enhancing performance). The variety of these changes makes architecture evolution management complex because all architecture descriptions must remain consistent after change. To do so, whatever part of the architectural description they affect, the effects of change have to be propagated to the other parts. The goal of this paper is to provide support for evolving component-based architectures at multiple abstraction levels. Architecture descriptions follow an architectural model named Dedal, the three description levels of which correspond to the three main development steps - specification, implementation and deployment. This paper formalizes an evolution management model that generates evolution plans according to a given architecture change request, thus preserving consistency of architecture descriptions and coherence between them. The approach is implemented as an Eclipse-based tool and validated with three evolution scenarios of a Home Automation Software example. The paper presents a formal approach for managing component-based architecture evolution at multiple abstraction levels.The approach covers the full component-based software development process thanks to the Dedal architectural model.It enables software verification and validation through the generation of B formal specifications from diagrammatic models.It generates reliable evolution plans that prevent architecture inconsistencies.The approach is implemented and experimented on three different evolution scenarios.},
+	pages = {24--49},
+	issue = {C},
+	journaltitle = {Sci. Comput. Program.},
+	author = {Mokni, Abderrahman and Urtado, Christelle and Vauttier, Sylvain and Huchard, Marianne and Zhang, Huaxi Yulin},
+	urldate = {2017-03-01},
+	date = {2016-10},
+	keywords = {Architecture analysis, Architecture evolution, Evolution rules, Formal models, {MDE}}
+}
+
+@inproceedings{eichberg_defining_2008,
+	location = {New York, {NY}, {USA}},
+	title = {Defining and Continuous Checking of Structural Program Dependencies},
+	isbn = {978-1-60558-079-1},
+	url = {http://doi.acm.org/10.1145/1368088.1368142},
+	doi = {10.1145/1368088.1368142},
+	series = {{ICSE} '08},
+	abstract = {Dependencies between program elements need to be modeled from different perspectives reflecting architectural, design, and implementation level decisions. To avoid erosion of the intended structure of the code, it is necessary to explicitly codify these different perspectives on the permitted dependencies and to detect violations continuously and incrementally as software evolves. We propose an approach that uses declarative queries to group source elements - across programming language module boundaries - into overlapping ensembles. The dependencies between these ensembles are also specified as logic queries. The approach has been integrated into the incremental build process of Eclipse to ensure continuous checking, using an engine for tabled and incremental evaluation of logic queries. Our evaluation shows that our approach is fast enough for day-to-day use along the incremental build process of modern {IDEs}.},
+	pages = {391--400},
+	booktitle = {Proceedings of the 30th International Conference on Software Engineering},
+	publisher = {{ACM}},
+	author = {Eichberg, Michael and Kloppenburg, Sven and Klose, Karl and Mezini, Mira},
+	urldate = {2017-03-01},
+	date = {2008},
+	keywords = {continuous checking, controlling program dependencies, datalog, static analysis}
+}
+
+@inproceedings{goldstein_automatic_2015,
+	location = {Piscataway, {NJ}, {USA}},
+	title = {Automatic and Continuous Software Architecture Validation},
+	url = {http://dl.acm.org/citation.cfm?id=2819009.2819021},
+	series = {{ICSE} '15},
+	abstract = {Software systems tend to suffer from architectural problems as they are being developed. While modern software development methodologies such as Agile and Dev-Ops suggest different ways of assuring code quality, very little attention is paid to maintaining high quality of the architecture of the evolving systems. By detecting and alerting about violations of the intended software architecture, one can often avoid code-level bad smells such as spaghetti code. Typically, if one wants to reason about the software architecture, the burden of first defining the intended architecture falls on the developer's shoulders. This includes definition of valid and invalid dependencies between software components. However, the developers are seldom familiar with the entire software system, which makes this task difficult, time consuming and error-prone. We propose and implement a solution for automatic detection of architectural violations in software artifacts. The solution, which utilizes a number of predefined and user-defined patterns, does not require prior knowledge of the system or its intended architecture. We propose to leverage this solution as part of the nightly build process used by development teams, thus achieving continuous automatic validation of the system's software architecture. As we show in multiple open-source and proprietary cases, a small set of predefined patterns can detect architectural violations as they are introduced over the course of development, and also capture deterioration in existing architectural problems. By evaluating the tool on relatively large open-source projects, we also validate its scalability and practical applicability to large software systems.},
+	pages = {59--68},
+	booktitle = {Proceedings of the 37th International Conference on Software Engineering - Volume 2},
+	publisher = {{IEEE} Press},
+	author = {Goldstein, Maayan and Segall, Itai},
+	urldate = {2017-03-01},
+	date = {2015}
+}
+
+@online{sonar_qube},
+	title = {Continuous Code Quality {SonarQube}},
+	url = {https://www.sonarqube.org/},
+	urldate = {2017-03-01}
+} 
