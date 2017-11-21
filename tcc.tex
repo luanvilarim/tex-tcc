@@ -276,10 +276,11 @@
 		\hspace{1cm}
 		\parbox{0.6\textwidth}{%
 			\footnotesize
+
+			Moraes, Luan Marcelo de Aristeu Vilarin; Moreira, Thiago Della Libera.
 			
-			Moraes, Luan Marcelo de Aristeu Vilarin Moraes; Moreira, Thiago Della Libera.
-			
-			\hspace{0.3cm} TOP SECRET / Rebecca Pontes Salles -- 2017. 
+			\hspace{0.3cm} TOP SECRET /  Luan Marcelo de Aristeu Vilarin Moraes e Thiago Della Libera Moreira. -- 2017. 
+
 			
 			\hspace{0.3cm} \pageref{lastpretextualpage},   \pageref{lastpage}f; enc.
 			\singlespacing
@@ -339,11 +340,11 @@
 	
 	\justifying 
 	\noindent
-	O crescente aumento de congestionamentos no tráfego rodoviário demanda pesquisas relacionadas a mobilidade urbana. Essas pesquisas modelam o problema do tráfego como de trajetória, a partir da análise individualizada de objetos móveis que continuamente transmitem sua geolocalização. Um exemplo disso são os ônibus do Rio de Janeiro. Tais veículos funcionam como sensores de trajetória e produzem grande quantidade de dados. Algumas questões, no entanto, continuam em aberto, como características do transporte público em horários de pico e comportamentos sistêmicos presentes nas diferentes regiões que interfiram na mobilidade da cidade. A agregação espaço-temporal dos dados das trajetórias dos modais urbanos oferece uma visão sumarizada dos dados com potencial para identificação de padrões sistêmicos. Este trabalho visa a aplicar técnicas de identificação de motifs sobre esses dados agregados. Espera-se encontrar padrões que expliquem as diferentes formações e propagações de atrasos, bem como outros fenômenos escondidos sob esse grande volume de dados.
+	INSERIR
 	\\[3em]
 	
 	\normalsize\noindent
-	\textbf{Palavras-chave}: modelos de previsão; séries temporais; agregação temporal; temperatura da superfície do mar; Oceano Atlântico
+	\textbf{Palavras-chave}: INSERIR
 	
 	\pagebreak
 	
@@ -357,7 +358,7 @@
 	
 	\justifying
 	\noindent
-	Extreme environmental events such as droughts affect millions of people all around the world. Although it is not possible to prevent this type of event, its prediction under different time horizons enables the mitigation of eventual damages caused by its occurrence. An important variable for identifying occurrences of droughts is the \acr{SST}. In the Tropical Atlantic Ocean, \acr{SST} data are collected and provided by the Prediction and Research Moored Array in the Tropical Atlantic (\acr{PIRATA}) Project, which is an observation network composed of sensor buoys arranged in this region. Sensors of this type, and more generally Internet of Things (\acr{IoT}) sensors, commonly lead to data losses that influence the quality of data sets collected for adjusting prediction models. In this paper, we explore the influence of temporal aggregation in predicting step-ahead \acr{SST} considering different prediction horizons and different sizes for training data sets. We have conducted several experiments using data collected by \acr{PIRATA} Project. Our results point out scenarios for training data sets and prediction horizons indicating whether or not temporal aggregated \acr{SST} time series may be beneficial for prediction.
+	INSERIR
 	\\[3em]
 	
 	\normalsize\noindent
@@ -406,27 +407,23 @@
 	
 \chapter{Introdução}
 \label{sec:introducao}
-A cada nova atualização do código-fonte, há chances de que mudanças ocorram na implementação arquitetural do software. Tais mudanças podem gerar discrepâncias à arquitetura previamente definida\citep{Perry:1992:FSS:141874.141884}. Este fenômeno se chama erosão arquitetural e pode trazer sérios riscos ao projeto quando não resolvida antes que possa ser muito custoso para tratar.\citep{Foote99bigball}.
-
-Com o intuito de contornar problemas deste tipo, existem ferramentas que fazem checagem contínua da arquitetura desejada contra a implementada no código-fonte baseando-se em regras programadas em conformidade com a necessidade arquitetural das partes interessadas. A cada alteração no código-fonte, a ferramenta verifica a existência de uma violação arquitetural. Imediatamente, a ferramenta de checagem contínua mostra onde a violação ocorreu ao desenvolvedor. 
-////CHECAR REFERENCIA AQUI EMBAIXO
-Para grandes projetos, onde o número de violações pode atingir uma quantidade difícil de ser detectada e corrigida, a verificação contínua ajuda a remover inconformidades do código, assim que ela ocorre\citep{goldstein_automatic_2015}.
-
-A ferramenta de checagem contínua de código-fonte que este trabalho abordará será o \textit{SonarQube} \citet{sonar_qube}. Esta ferramenta oferece diversos recursos como, a correção de \textit{bugs}, o auxílio à manutenção de boas práticas de programação. Entretanto, a ferramenta não atende com eficiência quando há a necessidade de criar regras customizadas de arquitetura. Regras que verificam violações de requisitos não-funcionais, são difíceis de serem implementadas. A criação dessas regras requer que o desenvolvedor crie diversos arquivos e implemente com certo esforço de desenvolvimento. 
-
-Neste trabalho, o objetivo principal será estudar formas de criar regras de forma mais prática dentro da ferramenta, isto é com uma linguagem mais expressiva e que possa reduzir o esforço de desenvolvimento. Ao criar uma regra, é desejável que a preocupação principal do desenvolvedor ou arquiteto seja a criação das regras e não as barreiras de implementação das regras da ferramenta. O \textit{SonarQube} é uma ferramenta multi-linguagem. Com o intuito de reduzir o escopo do trabalho, o objetivo foi aprimorar a criação das regras na ferramenta em linguagem Java. Isso foi feito, criando uma linguagem mais simples e expressiva como uma camada superior a linguagem Java. Vale ressaltar, que a escrita de regras na ferramenta para checagem do código-fonte escrito em Java é feita na linguagem Java.
-
-/////MELHORAR PARAGRAFO ABAIXO
-Incluindo esta introdução (i), este trabalho foi dividido em quatro outras seções: A fundamentação teórica (ii) reúne trabalhos que, analogamente, pavimentam a estrada na qual este trabalho percorre. O desenvolvimento(iii) descreve a abordagem posta em prática para solucionar o problema apontado e as (iv) conclusões parciais apresentam o que foi aprendido e os planos para a conclusão total do trabalho.
 
 
-\chapter{Preliminares}
-\label{sec:background}
-Séries espaço-temporais são definidas como sequência de observações que contêm dados sobre o local e momento em que coleta foi feita \citep{cressie2015statistics}(explicar framework). As séries espaço-temporais podem ser caracterizadas como observações de objetos móveis ou objetos permanentes(explicar potencial de um framework). Os objetos que tem dados de sua localização variantes com o tempo são classificados como móveis. A sequência de observações sobre objetos móveis é classificada como trajetória. A trajetória é o modelo de dados mais aplicado a problemas relacionados ao tráfego \citep{chen2015survey}. Entretanto, estudos que se relacionam mais diretamente com o tema deste trabalho são aqueles em que se agrega informações do objeto \citep{tao2004spatio}, gerando séries espaço-temporais associados a objetos permanentes(explicar que vamos focar mais em trabalho de avaliação de direção senão o escopo vai ficar imenso).
+\chapter{Conceitos Preliminares}
+\label{sec:conceitos_preliminares}
 
-A agregação de dados de objetos móveis pode ser feita de diferentes formas. Os tipos básicos de agregações existentes são Espacial (\emph{S}), Temporal (\emph{T}) e Atributiva ou categórica (\emph{A}). Outros tipos de agregação podem ser feitos a partir da combinação dos tipos básicos, como \emph{$S \times T$}, \emph{$S \times T \times A$} e \emph{$S \times S \times T \times T$} \citep{chen2015survey}. Neste trabalho, a agregação aplicada é a Espaço-Temporal (\emph{$S \times T$}), em que o resultado esperado é composto por séries temporais (T) associadas a pontos geográficos permanentes (S). Tais agregações podem ser interpretadas como sensores virtuais correspondente a região agregada.  
+\section{Aplicações Híbridas}
+Hoje o total de aplicações para celulares (Apps), nas diversas lojas de aplicativos existentes, somam o montante maior do que o de dois milhões \cite{malavolta} de aplicativos disponíveis. Relatórios passados do Gartner \cite{gartner} previam que o volume de downloads de aplicações para celulares ultrapassaria trezentos bilhões em 2016. Isso deixa claro que as aplicações para dispositivos móveis têm sua posição já consolidada dentro da sociedade.
 
-As séries temporais apresentam subsequências que se repetem com frequência. Alguns dos padrões que se repetem não são conhecidos, configurando \emph{motifs} \citep{esling2012time}. A identificação de \emph{motifs} podem ser feita sobre séries temporais univariadas ou multivariadas. Neste trabalho, as séries espaço-temporais obtidas após a agregação \emph{$S \times T$} são multivariadas \citep{wang2016effective} \citep{vahdatpour2009toward}. 
+Com isso algumas dificuldades também ficam aparentes. O processo de desenvolvimento de aplicações nativas, apesar de ser a maneira mais apropriada de criar-se uma aplicação para celulares, apresenta algumas desvantagens \cite{Xanthopoulos:2013:CAC:2490257.2490292}. A maior delas é provavelmente o fato de não ser possível reutilizar o código de uma aplicação entre plataformas de desenvolvimento (sistema operacional) diferentes. Com isso, e por sua maior complexidade de desenvolvimento, aplicações nativas requerem uma maior e mais experiente equipe de desenvolvimento.
+
+Como uma possível solução para o problema supracitado, usa-se a abordagem de desenvolvimento de uma aplicação híbrida. Uma aplicação híbrida é uma ramificação das soluções ditas multiplataforma (\textit{cross-platform}), como: \textit{Web Apps}, \textit{Hybrid Apps}, \textit{Interpreted Apps} e \textit{Generated Apps} \cite{Xanthopoulos:2013:CAC:2490257.2490292}. Resumidamente, aplicações híbridas são \textit{aplicações web} dentro de um invólucro de aplicação nativa \cite{Serrano:2013:MWA:2553372.2553378}, a aplicação tem o código de suas telas salvos fisicamente no aparelho porém utiliza uma \textit{webview} para mostrá-las. 
+
+Tais aplicações são desenvolvidas utilizando tecnologias como HTML, CSS e JavaScript, diminuindo consideravelmente a curva de aprendizado de um desenvolvedor para que o mesmo seja capaz de criar uma aplicação para dispositivos móveis. Faz-se uso também de um \textit{framework} híbrido de desenvolvimento \textit{e.g.} Apache Cordova, Ionic Framework, ou React Native. Esses frameworks são responsáveis por encapsular a aplicação em uma interface nativa, dando inclusive acesso à interface de interação com ferramentas do sistema.
+
+As vantagens de criar-se uma aplicação dessas é justamente a capacidade de escrever seu código apenas uma vez e mesmo assim o aplicativo poderá ser usado em diferentes ambientes, é o chamado \textit{write once, run anywhere} \cite{Xanthopoulos:2013:CAC:2490257.2490292}. Além dessa vantagem óbvia, por usar JavaScript, desenvolvedores podem lançar mão facilmente da grande comunidade da linguagem e reutilizar inúmeras bibliotecas voltadas para \textit{web} em suas aplicações.
+
+Já suas principais desvantagens estão no desempenho ao acessar a interface do sistema \cite{malavolta}, pois é preciso utilizar códigos intermediários para traduzir o que a aplicação em JavaScript deseja para com o acesso do sistema, e o desempenho e fluídez na transição de telas, haja vista que são renderizadas como dentro de um navegador.
 
 
 \chapter{Trabalhos Relacionados}
@@ -443,7 +440,7 @@ Em \citep{kim2009passenger} apresenta-se uma modelagem a partir de uma entrevist
 
 Já \citep{raymond2016} debruça-se sobre a questão da difícil interpretação de séries-temporais advindas do sistema GPS, já que as mesmas podem vir a apresentar \textit{outliers} cuja origem é a interferência que o sinal de geolocalização pode vir a receber. Para evitar tratar tal desafio é utilizado uma técnica de correspondência por mapas (\textit{map-matching}) e \textit{bag of words}, esta última sendo uma técnica de classificação de imagem. A correspondência por mapas transforma uma sequência de pontos do GPS em uma de ruas, diminuindo a granularidade do problema. Para testar tal abordagem é utilizado a base de dados de posições dos ônibus da cidade do Rio de Janeiro. 
 
-\cite{SINGH201756}
+\cite{SINGH201756} FALAR DO LIVRO DE 30 pags
 
 
 \begin{table}[!ht]
@@ -470,13 +467,12 @@ A tabela \ref{tbl:sumario} apresenta os trabalhos relacionados e as técnicas ap
 
 \chapter{Proposta} 
 \label{sec:proposta}
+
 Este trabalho tem como objetivo facilitar o desenvolvimento de aplicações de coletas de dados gerais através dos sensores de um smartphone convencional ao avaliar a qualidade de direção mas não restringido apenas a esse proposito. Como citado na seção de trabalhos relacionados, a grande maioria dos trabalhos partia de um ponto inicial onde não havia nenhuma ferramenta que auxiliasse ou facilitasse a execução da pesquisa. Todos os trabalhos coletavam dados crus e trabalhavam em cima dos mesmo com, em certos casos filtros e çalculos para normalizarem os dados e assim, poder fazer uma análise dos mesmos. Mesmo tendo esse conceito em mente, a proposta de um framwork é muito mais ampla que atacar somente esse tipo de usuário. Existem possibilidades de que este framework seja utiliado no mercado por sua fácil customização e sua modularização.
 
 A criação de um framework tem o objetivo de generalizar e facilitar a execução de qualquer tarefa sem que a mesma seja retrabalhada, seja em metodologia ou desenvolvimento, com certo grau de customização.(um objetivo). Estão sendo considerados trabalhos nos quais o objetivo é coetar e interpretar dados dos sensores do celular como acelerometro, GPS, sensor de gravidade, giroscópio(nem sei se existe, inventei). Como a extensão do uso de um framework é muito ampla, o escopo será reduzido para atender necessidades voltadas ao processamento e avaliação da qualidade e perfil de direção de motoristas em geral.Ainda assim podemos extrai um grande quantidade de possibilidades em relação a que tipo de motorista será o alvo do trabalho. Portanto, ao final deste trabalho será apresentado uma aplicação exemplo que irá coletar dados sobre o delsocamento dos alunos do CEFET e avaliar se a qualidade dos meios de transporte utilizados é satisfatória. 
 
 esta avaliação é feita desta forma (elaborar isso conforme o trabalho é desenvolvido mas aqui seria interessante falar do app exemplo no qual o framework irá atuar)
-
-Uma vez que as séries espaço-temporais sejam produzidas, aplica-se a identificação de \emph{motifs} sobre essas séries. Em função das propriedades destes dados, pretende-se desenvolver um algoritmo, inspirado em \emph{random projection} \citep{li2009probabilistic}, que introduza restrições espaço-temporais na identificação destes padrões. Estas restrições espaço-temporais visam observar padrões que se propagam ao longo de uma vizinhança(conclusão da aplicação de toda nossa metodologia). Deste modo, espera-se que sejam emanados padrões capazes de responder as questões de pesquisa previamente mencionadas(o que se espera).  
 
 \chapter{Estado Atual do Trabalho}
 \label{sec:estado_atual}
@@ -510,7 +506,7 @@ Concomitante ao desenvolvimento, uma documentação para o usuário será escrit
 
 O conceito por trás das funcinonalidades é torna-lás o mais customizável possível para que o usuário tenha total liberdade de adicionar ou retirar funcionalidades que sejam (des)necessárias ao desenvolvimento de seu projeto. 
 
-Para exemplificar e mostrar o poder e simplicidade por trás do framework desenvolvido. Será tam'bem desenvolvido uma aplicação simples como exemplo. Além de servir como guia para utilização do framework. Aplicativos híbridos tem um problema que é amplamente conhecido, sua perda de desempenho principalmente se o app for muito baseado em visualização gráfica. para contornar isso, será desenvolvido servidor simples que tratará do processamento crowdsorcing e outros tipos de processamento envolvidos. Para a comunicação com o Servidor será criado uma API que al'me de se comunicar, permitirá a contabilização de dados trocados entre o usuário e o servidor. Permitindo assim, criar uma interface de gamificação para bonificar o usuário pela coleta de dados importante para a análise de dados e uma possível forma de monetizar este trabalho através de requisições à API.
+Para exemplificar e mostrar o poder e simplicidade por trás do framework desenvolvido. Será também desenvolvido uma aplicação simples como exemplo. Além de servir como guia para utilização do framework. Aplicativos híbridos tem um problema que é amplamente conhecido, sua perda de desempenho principalmente se o app for muito baseado em visualização gráfica. para contornar isso, será desenvolvido servidor simples que tratará do processamento crowdsorcing e outros tipos de processamento envolvidos. Para a comunicação com o Servidor será criado uma API que al'me de se comunicar, permitirá a contabilização de dados trocados entre o usuário e o servidor. Permitindo assim, criar uma interface de gamificação para bonificar o usuário pela coleta de dados importante para a análise de dados e uma possível forma de monetizar este trabalho através de requisições à API.
 
 A dissertação será escrita conforme as partes que compoem a ferramentas forem desenvolvidas. Assim, é garantiremos que o conteúdo da dissertação corresponde com o trabalho feito e as demais funcionalidades citadas aqui que não forem desenvolvidas serão novamente citadas levando em consideração os impedimentos e dificuldades encontradas até o momento da defesa.
 
