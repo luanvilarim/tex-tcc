@@ -150,33 +150,12 @@
 %-----------------------------------------------
 % Abreviações
 %-----------------------------------------------
-\newacro{TSM}{Temperatura da Superfície do Mar}
-\newacro{PIRATA}{\textit{Prediction and Research Moored Array in the Tropical Atlantic}}
-\newacro{SST}{Sea Surface Temperature}
-\newacro{ARIMA}{Modelos Autorregressivos Integrados de Médias Móveis}
-\newacro{OSEN}{Oscilação Sul do El Niño}
-\newacro{ZCIT}{Zona de Convergência Intertropical}
-\newacro{AR}{Modelos Autorregressivos}
-\newacro{MA}{Modelos de Médias Móveis}
-\newacro{ARMA}{Modelos Autorregressivos de Médias Móveis}
-\newacro{MSE}{Erro Médio Quadrático}
-\newacro{NMSE}{Erro Médio Quadrático Normalizado}
-\newacro{MAPE}{Erro Percentual Absoluto Médio}
-\newacro{SMAPE}{Erro Percentual Absoluto Médio Simétrico}
-\newacro{ATLAS}{\textit{Autonomous Temperature Line Acquisition System}}
-\newacro{H0}{Hipótese Nula}
-\newacro{ADF}{\textit{Augmented Dickey-Fuller}}
-\newacro{KPSS}{\textit{Kwiatkowski-Phillips-Schmidt-Shin}}
-\newacro{AICc}{Critério de Informação de Akaike Corrigido}
-\newacro{HP}{Horizonte de Previsão}
-\newacro{HYCOM}{\textit{HYbrid Coordinate Ocean Model}}
-\newacro{CFSv2}{\textit{The NCEP Climate Forecast System} Versão 2}
-\newacro{NCEP}{\textit{National Centers for Environmental Prediction}}
-\newacro{SVM}{\textit{Support Vector Machine}}
-\newacro{CNPq}{Conselho Nacional de Desenvolvimento Científico e Tecnológico}
-\newacro{EM-DAT}{\textit{Emergency Events Database}}
-\newacro{FUNCEME}{Fundação Cearense de Meteorologia e Recursos Hídricos}
-\newacro{IoT}{Internet das Coisas}
+\newacro{HTML}{\textit{HyperText Markup Language}}
+\newacro{CSS}{\textit{Cascading Style Sheets}}
+\newacro{GPS}{\textit{Global Positioning System}}
+\newacro{APP}{\textit{Application}}
+\newacro{CEFET}{Centro Federal de Educação Tecnológica Celso Suckow Da Fonseca}
+\newacro{RJ}{Rio de Janeiro}
 
 \begin{document}
 	%----------------------------------------------------------------------------------------
@@ -193,7 +172,7 @@
 	\begin{minipage}{\textwidth}
 		\begin{center}
 			{\bfseries \large CENTRO FEDERAL DE EDUCACAÇÃO TECNOLÓGICA\\ CELSO SUCKOW DA FONSECA}\\[16em]
-			{\bfseries \LARGE TOP SECRET}
+			{\bfseries \LARGE Biblioteca Multiplataforma de Avaliação de Viagens Rodoviárias para Dispositivos Móveis}
 		\end{center}
 	\end{minipage}\\[6em]
 	
@@ -232,18 +211,24 @@
 	\begin{minipage}{\textwidth}
 		\begin{center}
 			{\bfseries \large CENTRO FEDERAL DE EDUCACAÇÃO TECNOLÓGICA\\ CELSO SUCKOW DA FONSECA}\\[6em]
-			{\bfseries \LARGE TOP SECRET}\\[6em]% Title of your document
-			\normalsize
-			\raggedleft Luan Marcelo de Aristeu Vilarin Moraes
-			\raggedleft Thiago Della Libera Moreira
+			{\bfseries \LARGE Biblioteca Multiplataforma de Avaliação de Viagens Rodoviárias para Dispositivos Móveis}\\[6em]% Title of your document
 		\end{center}
 	\end{minipage}\\[6em]
 	
 	\begin{flushright}
 		\begin{minipage}{0.5\textwidth}
 			\normalsize
+			\raggedleft \normalsize Luan Marcelo de Aristeu Vilarin Moraes
+			\raggedleft \normalsize Thiago Della Libera Moreira
+		\end{minipage}\\[6em]
+
+	\end{flushright}
+	
+	\begin{flushright}
+		\begin{minipage}{0.5\textwidth}
+			\normalsize
 			\raggedleft
-			Projeto final apresentado em cumprimento às normas do Departamento de Educação Superior do Centro Federal de Educação Tecnológica Celso Suckow da Fonseca, CEFET/RJ, como parte dos requisitos para obtenção do título de Bacharel em Ciência da Computação.
+			Projeto final apresentado em cumprimento às normas do Departamento de Educação Superior do \acr{CEFET} no \acr{RJ}, como parte dos requisitos para obtenção do título de Bacharel em Ciência da Computação.
 		\end{minipage}\\[6em]
 	\end{flushright}
 	
@@ -267,7 +252,7 @@
 	
 	%\pagenumbering{gobble}% Remove page numbers (and reset to 1)
 	
-	\includepdf{ficha.pdf} % página pdf feita pela biblioteca
+	%\includepdf{ficha.pdf} página pdf feita pela biblioteca
 	
 	\iffalse % COMENTÁRIO
 	\center % Center everything on the page
@@ -279,7 +264,7 @@
 
 			Moraes, Luan Marcelo de Aristeu Vilarin; Moreira, Thiago Della Libera.
 			
-			\hspace{0.3cm} TOP SECRET /  Luan Marcelo de Aristeu Vilarin Moraes e Thiago Della Libera Moreira. -- 2017. 
+			\hspace{0.3cm} Biblioteca Multiplataforma de Avaliação de Viagens Rodoviárias para Dispositivos Móveis /  Luan Marcelo de Aristeu Vilarin Moraes e Thiago Della Libera Moreira. -- 2017. 
 
 			
 			\hspace{0.3cm} \pageref{lastpretextualpage},   \pageref{lastpage}f; enc.
@@ -322,8 +307,6 @@
 	\begin{flushright}
 		\begin{minipage}{0.5\textwidth}
 			\normalsize
-			Agradece-se ao \acr{CNPq} pelo financiamento parcial desta pesquisa.\\
-			\\
 			Agradece-se também as contribuições de ... que deu início a pesquisas sobre o tema abordado.
 		\end{minipage}\\[1.5cm]
 	\end{flushright}
@@ -340,11 +323,26 @@
 	
 	\justifying 
 	\noindent
-	INSERIR
+	A chegada da telefonia móvel às mãos da população comum permite que sensores caros e antes pouco utilizados pelas massas se tornem muito mais acessíveis. Com isso, a pesquisa focada na utilização de tais sensores também cresceu. Essa crescente mostrou a capacidade que tais dispositivos possuem quanto à coleta de dados gerais do dia-a-dia de seu dono. Porém, uma má prática foi desenvolvida em meio à essas descobertas. A grande maioria dos trabalhos envolvendo tecnologia móvel e o uso de seus sensores recria os algoritmos utilizados para coleta, limpeza, normalização e/ou apresentação dos dados. Gerando assim, uma perda de reutilização de tecnologias já criadas e já executadas, apenas por um questão de customização da aplicação. Este trabalho, oferece uma biblioteca no qual o objetivo é modularizar os passos que são recriados repetidas vezes nestes projetos oferencendo um certo grau de customização.  
 	\\[3em]
 	
 	\normalsize\noindent
-	\textbf{Palavras-chave}: INSERIR
+	\textbf{Palavras-chave}: aplicações híbridas, javascript, celular móvel, biblioteca, geolocalização, qualidade, direção
+	
+	
+	Revisar RESUMO e Abstract\\
+	MELHORAR INTRO\\
+	ATUALIZAR ABREVIAÇÕES\\
+	ATUALIZAR LISTA DE FIGURAS\\
+	ATUALIZAR LISTA DE TABELAS\\
+	CRIAR TABELAS DE TRABALHOS RELACIONADOS\\
+	LEVANTAR ABREVIACOES\\
+	MELHORAR CONCEITOS PRELIMINARES\\
+	MELHORAR PROSPOSTA\\
+	MELHORAR ESTADO ATUAL DO TRABALHO\\
+	PLANEJAR O PLANEJAMENTO\\
+	VERIFICAR REFERENCIAS\\
+	FICHA BIBLIOTECA\\
 	
 	\pagebreak
 	
@@ -358,11 +356,11 @@
 	
 	\justifying
 	\noindent
-	INSERIR
+	The arrival of mobile phones in hands of population allowed expensive sensors to become much more accessible to the masses. As a result, research focused on the use of such sensors has also grown. This increase has shown the ability of such devices to collect their users day-to-day data important to learn, correct and enhance daily activities. However, a bad practice was developed in the midst of these findings. The vast majority of the work involving mobile technology and the use of its sensors recreates the algorithms used for data collection, cleaning, normalization and/or presentation. Generating, thus, a loss of reuse of technologies already created and already executed, just for the sake of customization of the application. This work offers a library in which the objective is to modularize the steps that are recreated repeatedly in these projects offering a certain degree of customization.
 	\\[3em]
 	
 	\normalsize\noindent
-	\textbf{Keywords}: prediction models; time series; temporal aggregation; sea surface temperature; Atlantic Ocean
+	\textbf{Keywords}: hybrid applications, javascript, mobile phone, library, gps, quality, driving
 	
 	
 	\pagebreak
@@ -408,18 +406,21 @@
 \chapter{Introdução}
 \label{sec:introducao}
 
+Diversos trabalhos propõem-se a coletar e interpretar informações de modo a identificar padrões que respondam questionamentos acerca da qualidade do serviço de transporte multimodal em várias localidades do planeta. Inúmeros fatores podem vir a influenciar o conforto da viagem e o grau de satisfação do passageiro para com a experiência entregue pela companhia de transporte. 
+
+Algumas características podem porém gerar danos à segurança dos passageiros. \citep{world2015global} aponta a relação entre a condição da malha viária e o índice de acidentes fatais no trânsito. \citep{euPolicyDep} afirma que o comportamento do motorista é, juntamente com a qualidade da infraestrutura disponível, o maior contribuidor para que acidentes aconteçam. Logo, é possível achar uma justificativa plausível para que tantos trabalhos tentem identificar padrões nas viagens afim de tentar mitigar algumas das situações apontadas como possíveis causas de acidentes.
 
 \chapter{Conceitos Preliminares}
 \label{sec:conceitos_preliminares}
 
 \section{Aplicações Híbridas}
-Hoje o total de aplicações para celulares (Apps), nas diversas lojas de aplicativos existentes, somam o montante maior do que o de dois milhões \cite{malavolta} de aplicativos disponíveis. Relatórios passados do Gartner \cite{gartner} previam que o volume de downloads de aplicações para celulares ultrapassaria trezentos bilhões em 2016. Isso deixa claro que as aplicações para dispositivos móveis têm sua posição já consolidada dentro da sociedade.
+Hoje o total de aplicações para celulares (\acr{APP}s), nas diversas lojas de aplicativos existentes, somam o montante maior do que o de dois milhões \cite{malavolta} de aplicativos disponíveis. Relatórios passados do Gartner \cite{gartner} previam que o volume de downloads de aplicações para celulares ultrapassaria trezentos bilhões em 2016. Isso deixa claro que as aplicações para dispositivos móveis têm sua posição já consolidada dentro da sociedade.
 
 Com isso algumas dificuldades também ficam aparentes. O processo de desenvolvimento de aplicações nativas, apesar de ser a maneira mais apropriada de criar-se uma aplicação para celulares, apresenta algumas desvantagens \cite{Xanthopoulos:2013:CAC:2490257.2490292}. A maior delas é provavelmente o fato de não ser possível reutilizar o código de uma aplicação entre plataformas de desenvolvimento (sistema operacional) diferentes. Com isso, e por sua maior complexidade de desenvolvimento, aplicações nativas requerem uma maior e mais experiente equipe de desenvolvimento.
 
-Como uma possível solução para o problema supracitado, usa-se a abordagem de desenvolvimento de uma aplicação híbrida. Uma aplicação híbrida é uma ramificação das soluções ditas multiplataforma (\textit{cross-platform}), como: \textit{Web Apps}, \textit{Hybrid Apps}, \textit{Interpreted Apps} e \textit{Generated Apps} \cite{Xanthopoulos:2013:CAC:2490257.2490292}. Resumidamente, aplicações híbridas são \textit{aplicações web} dentro de um invólucro de aplicação nativa \cite{Serrano:2013:MWA:2553372.2553378}, a aplicação tem o código de suas telas salvos fisicamente no aparelho porém utiliza uma \textit{webview} para mostrá-las. 
+Como uma possível solução para o problema supracitado, usa-se a abordagem de desenvolvimento de uma aplicação híbrida. Uma aplicação híbrida é uma ramificação das soluções ditas multiplataforma (\textit{cross-platform}), como: \textit{Web \acr{APP}s}, \textit{Hybrid \acr{APP}s}, \textit{Interpreted Apps} e \textit{Generated \acr{APP}s} \cite{Xanthopoulos:2013:CAC:2490257.2490292}. Resumidamente, aplicações híbridas são \textit{aplicações web} dentro de um invólucro de aplicação nativa \cite{Serrano:2013:MWA:2553372.2553378}, a aplicação tem o código de suas telas salvos fisicamente no aparelho porém utiliza uma \textit{webview} para mostrá-las. 
 
-Tais aplicações são desenvolvidas utilizando tecnologias como HTML, CSS e JavaScript, diminuindo consideravelmente a curva de aprendizado de um desenvolvedor para que o mesmo seja capaz de criar uma aplicação para dispositivos móveis. Faz-se uso também de um \textit{framework} híbrido de desenvolvimento \textit{e.g.} Apache Cordova, Ionic Framework, ou React Native. Esses frameworks são responsáveis por encapsular a aplicação em uma interface nativa, dando inclusive acesso à interface de interação com ferramentas do sistema.
+Tais aplicações são desenvolvidas utilizando tecnologias como \acr{HTML}, \acr{CSS} e JavaScript, diminuindo consideravelmente a curva de aprendizado de um desenvolvedor para que o mesmo seja capaz de criar uma aplicação para dispositivos móveis. Faz-se uso também de um \textit{framework} híbrido de desenvolvimento \textit{e.g.} Apache Cordova, Ionic Framework, ou React Native. Esses frameworks são responsáveis por encapsular a aplicação em uma interface nativa, dando inclusive acesso à interface de interação com ferramentas do sistema.
 
 As vantagens de criar-se uma aplicação dessas é justamente a capacidade de escrever seu código apenas uma vez e mesmo assim o aplicativo poderá ser usado em diferentes ambientes, é o chamado \textit{write once, run anywhere} \cite{Xanthopoulos:2013:CAC:2490257.2490292}. Além dessa vantagem óbvia, por usar JavaScript, desenvolvedores podem lançar mão facilmente da grande comunidade da linguagem e reutilizar inúmeras bibliotecas voltadas para \textit{web} em suas aplicações.
 
@@ -428,9 +429,6 @@ Já suas principais desvantagens estão no desempenho ao acessar a interface do 
 
 \chapter{Trabalhos Relacionados}
 \label{sec:trabalhos_relacionados}
-Diversos trabalhos propõem-se a coletar e interpretar informações de modo a identificar padrões que respondam questionamentos acerca da qualidade do serviço de transporte multimodal em várias localidades do planeta. Inúmeros fatores podem vir a influenciar o conforto da viagem e o grau de satisfação do passageiro para com a experiência entregue pela companhia de transporte. 
-
-Algumas características podem porém gerar danos à segurança dos passageiros. \citep{world2015global} aponta a relação entre a condição da malha viária e o índice de acidentes fatais no trânsito. \citep{euPolicyDep} afirma que o comportamento do motorista é, juntamente com a qualidade da infraestrutura disponível, o maior contribuidor para que acidentes aconteçam. Logo, é possível achar uma justificativa plausível para que tantos trabalhos tentem identificar padrões nas viagens afim de tentar mitigar algumas das situações apontadas como possíveis causas de acidentes.
 
 Utilizando-se de estratégias menos complexas ou mais robustas, inúmeros são os trabalhos dedicados ao levantamento e processamento de informações para entender e melhorar a infraestrutura das estradas ou o comportamento do motorista no trânsito. \citep{gawad2016dynamic} propõem uma abordagem de detecção de anomalias na pista utilizando aprendizado de máquina para calcular o limite entre um balanço natural do automóvel e um buraco no asfalto. Seu trabalho é dividido entre a aplicação em um telefone móvel, utilizada para perceber anomalias e apresentar um mapa com as marcações de outros eventos levantados anteriormente por mais usuários. E, um servidor que utiliza aprendizado por reforço para inserir ou remover anomalias no banco de dados. 
 
@@ -438,7 +436,7 @@ Utilizando-se de estratégias menos complexas ou mais robustas, inúmeros são o
 
 Em \citep{kim2009passenger} apresenta-se uma modelagem a partir de uma entrevista em forma de questionário que visa predizer o comportamento de passageiros baseado na probabilidade de escolha entre o primeiro ônibus a chegar à parada e o segundo. Tendo como características determinante o conforto da viagem baseado na disponibilidade de assentos, lotação do veículo e o tempo de duração do trajeto.
 
-Já \citep{raymond2016} debruça-se sobre a questão da difícil interpretação de séries-temporais advindas do sistema GPS, já que as mesmas podem vir a apresentar \textit{outliers} cuja origem é a interferência que o sinal de geolocalização pode vir a receber. Para evitar tratar tal desafio é utilizado uma técnica de correspondência por mapas (\textit{map-matching}) e \textit{bag of words}, esta última sendo uma técnica de classificação de imagem. A correspondência por mapas transforma uma sequência de pontos do GPS em uma de ruas, diminuindo a granularidade do problema. Para testar tal abordagem é utilizado a base de dados de posições dos ônibus da cidade do Rio de Janeiro. 
+Já \citep{raymond2016} debruça-se sobre a questão da difícil interpretação de séries-temporais advindas do sistema \acr{GPS}, já que as mesmas podem vir a apresentar \textit{outliers} cuja origem é a interferência que o sinal de geolocalização pode vir a receber. Para evitar tratar tal desafio é utilizado uma técnica de correspondência por mapas (\textit{map-matching}) e \textit{bag of words}, esta última sendo uma técnica de classificação de imagem. A correspondência por mapas transforma uma sequência de pontos do \acr{GPS} em uma de ruas, diminuindo a granularidade do problema. Para testar tal abordagem é utilizado a base de dados de posições dos ônibus da cidade do Rio de Janeiro. 
 
 \cite{SINGH201756} FALAR DO LIVRO DE 30 pags
 
@@ -448,7 +446,7 @@ Já \citep{raymond2016} debruça-se sobre a questão da difícil interpretação
 	\caption{Comparação dos trabalhos relacionados}
 	\begin{tabular}{ L{6cm} C{1.5cm} C{1.5cm} C{1.5cm} C{1.5cm} }
 		\hline\noalign{\smallskip}
-		Trabalho & AETR  & AETP & IMS  & IMT \\
+		Trabalho & Original & Framework & Entrevista \\
 		\hline\noalign{\smallskip}
 		%\hline\noalign{\smallskip}
 		\citet{ferreira2013visual} & X &  &  & \\
@@ -470,9 +468,9 @@ A tabela \ref{tbl:sumario} apresenta os trabalhos relacionados e as técnicas ap
 
 Este trabalho tem como objetivo facilitar o desenvolvimento de aplicações de coletas de dados gerais através dos sensores de um smartphone convencional ao avaliar a qualidade de direção mas não restringido apenas a esse proposito. Como citado na seção de trabalhos relacionados, a grande maioria dos trabalhos partia de um ponto inicial onde não havia nenhuma ferramenta que auxiliasse ou facilitasse a execução da pesquisa. Todos os trabalhos coletavam dados crus e trabalhavam em cima dos mesmo com, em certos casos filtros e çalculos para normalizarem os dados e assim, poder fazer uma análise dos mesmos. Mesmo tendo esse conceito em mente, a proposta de um framwork é muito mais ampla que atacar somente esse tipo de usuário. Existem possibilidades de que este framework seja utiliado no mercado por sua fácil customização e sua modularização.
 
-A criação de um framework tem o objetivo de generalizar e facilitar a execução de qualquer tarefa sem que a mesma seja retrabalhada, seja em metodologia ou desenvolvimento, com certo grau de customização.(um objetivo). Estão sendo considerados trabalhos nos quais o objetivo é coetar e interpretar dados dos sensores do celular como acelerometro, GPS, sensor de gravidade, giroscópio(nem sei se existe, inventei). Como a extensão do uso de um framework é muito ampla, o escopo será reduzido para atender necessidades voltadas ao processamento e avaliação da qualidade e perfil de direção de motoristas em geral.Ainda assim podemos extrai um grande quantidade de possibilidades em relação a que tipo de motorista será o alvo do trabalho. Portanto, ao final deste trabalho será apresentado uma aplicação exemplo que irá coletar dados sobre o delsocamento dos alunos do CEFET e avaliar se a qualidade dos meios de transporte utilizados é satisfatória. 
+A criação de um framework tem o objetivo de generalizar e facilitar a execução de qualquer tarefa sem que a mesma seja retrabalhada, seja em metodologia ou desenvolvimento, com certo grau de customização.(um objetivo). Estão sendo considerados trabalhos nos quais o objetivo é coetar e interpretar dados dos sensores do celular como acelerometro, \acr{GPS}, sensor de gravidade, giroscópio(nem sei se existe, inventei). Como a extensão do uso de um framework é muito ampla, o escopo será reduzido para atender necessidades voltadas ao processamento e avaliação da qualidade e perfil de direção de motoristas em geral.Ainda assim podemos extrai um grande quantidade de possibilidades em relação a que tipo de motorista será o alvo do trabalho. Portanto, ao final deste trabalho será apresentado uma aplicação exemplo que irá coletar dados sobre o delsocamento dos alunos do \acr{CEFET} e avaliar se a qualidade dos meios de transporte utilizados é satisfatória. 
 
-esta avaliação é feita desta forma (elaborar isso conforme o trabalho é desenvolvido mas aqui seria interessante falar do app exemplo no qual o framework irá atuar)
+esta avaliação é feita desta forma (elaborar isso conforme o trabalho é desenvolvido mas aqui seria interessante falar do \acr{APP} exemplo no qual o framework irá atuar)
 
 \chapter{Estado Atual do Trabalho}
 \label{sec:estado_atual}
@@ -500,13 +498,13 @@ Como descrito na seção anterior, o objetivo será elaborado um framework compi
 	\end{minipage}	
 \end{figure}
 
-Após definir a arquitetura e casos de uso cobertos, será iniciada a implementação do framework conforme a documentação definida. O desenvolvimento será feito em Javascript e o alvo da ferramenta será aplicativos híbridos para obtermos um alcance maior(apesar de eu apenas ter visto em apps nativos) de usuários e sistemas operacionais.  
+Após definir a arquitetura e casos de uso cobertos, será iniciada a implementação do framework conforme a documentação definida. O desenvolvimento será feito em Javascript e o alvo da ferramenta será aplicativos híbridos para obtermos um alcance maior(apesar de eu apenas ter visto em \acr{APP}s nativos) de usuários e sistemas operacionais.  
 
 Concomitante ao desenvolvimento, uma documentação para o usuário será escrita com tutoriais(talvez) e exemplos de como utilizar as funcionalidades do framework. 
 
 O conceito por trás das funcinonalidades é torna-lás o mais customizável possível para que o usuário tenha total liberdade de adicionar ou retirar funcionalidades que sejam (des)necessárias ao desenvolvimento de seu projeto. 
 
-Para exemplificar e mostrar o poder e simplicidade por trás do framework desenvolvido. Será também desenvolvido uma aplicação simples como exemplo. Além de servir como guia para utilização do framework. Aplicativos híbridos tem um problema que é amplamente conhecido, sua perda de desempenho principalmente se o app for muito baseado em visualização gráfica. para contornar isso, será desenvolvido servidor simples que tratará do processamento crowdsorcing e outros tipos de processamento envolvidos. Para a comunicação com o Servidor será criado uma API que al'me de se comunicar, permitirá a contabilização de dados trocados entre o usuário e o servidor. Permitindo assim, criar uma interface de gamificação para bonificar o usuário pela coleta de dados importante para a análise de dados e uma possível forma de monetizar este trabalho através de requisições à API.
+Para exemplificar e mostrar o poder e simplicidade por trás do framework desenvolvido. Será também desenvolvido uma aplicação simples como exemplo. Além de servir como guia para utilização do framework. Aplicativos híbridos tem um problema que é amplamente conhecido, sua perda de desempenho principalmente se o \acr{APP} for muito baseado em visualização gráfica. para contornar isso, será desenvolvido servidor simples que tratará do processamento crowdsorcing e outros tipos de processamento envolvidos. Para a comunicação com o Servidor será criado uma API que al'me de se comunicar, permitirá a contabilização de dados trocados entre o usuário e o servidor. Permitindo assim, criar uma interface de gamificação para bonificar o usuário pela coleta de dados importante para a análise de dados e uma possível forma de monetizar este trabalho através de requisições à API.
 
 A dissertação será escrita conforme as partes que compoem a ferramentas forem desenvolvidas. Assim, é garantiremos que o conteúdo da dissertação corresponde com o trabalho feito e as demais funcionalidades citadas aqui que não forem desenvolvidas serão novamente citadas levando em consideração os impedimentos e dificuldades encontradas até o momento da defesa.
 
